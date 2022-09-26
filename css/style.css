@@ -9,5 +9,26 @@
     height: 500px;
     border: 1px solid rgb(145, 15, 15);
     margin: 0 auto;
+    position: relative;
+    /* Para tudo que saia da delimitação da div desapareça da tela */
+    overflow: hidden;
 }
 
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    /* linear para velocidade constante */
+    animation: pipe-animation 4s infinite linear;
+}
+
+@keyframes pipe-animation {
+    /* onde o tubo começa */
+    from{
+        right: -80px;
+    }
+    /* onde o tubo termina */
+    to {
+        right: 100%;
+    }
+}
