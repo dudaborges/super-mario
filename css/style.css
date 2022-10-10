@@ -20,7 +20,8 @@
     bottom: 0;
     width: 80px;
     /* linear para velocidade constante */
-    animation: pipe-animation 4s infinite linear;
+    /* animation: pipe-animation 4s infinite linear; */
+    left: 120px;
 }
 
 .mario{
@@ -59,10 +60,10 @@
 
     /*3 momentos q ele fica no ar para ele demorar para cair de volta*/
 
-    30%{
+    35%{
         bottom: 180px;
     }
-    
+
     40%{
         bottom: 180px;
     }
@@ -75,7 +76,7 @@
         bottom: 180px;
     }
 
-    70%{
+    65%{
         bottom: 180px;
     }
 

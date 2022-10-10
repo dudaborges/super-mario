@@ -1,4 +1,6 @@
 const mario = document.querySelector('.mario')
+const pipe = document.querySelector('.pipe')
+
 
 const jump = () => {
     mario.classList.add('jump')
@@ -11,7 +13,12 @@ const jump = () => {
 
 }
 
-
+// criar um loop para verificar se perdeu ou não perdeu
+const loop = setInterval(() => {
+    // para acessar o deslocamento esquerdo do tubo
+    const pipePosition = pipe.offsetLeft
+    console.log(pipePosition)
+}, 10)
 
 document.addEventListener('keydown', jump)
 // o evento keydown é quando pressionar a tecla
