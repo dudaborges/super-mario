@@ -20,8 +20,7 @@
     bottom: 0;
     width: 80px;
     /* linear para velocidade constante */
-    /* animation: pipe-animation 4s infinite linear; */
-    left: 120px;
+    animation: pipe-animation 4s infinite linear;
 }
 
 .mario{

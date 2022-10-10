@@ -17,7 +17,11 @@ const jump = () => {
 const loop = setInterval(() => {
     // para acessar o deslocamento esquerdo do tubo
     const pipePosition = pipe.offsetLeft
-    console.log(pipePosition)
+
+    // quando a posição em relação a esquerda do pipe for 120 px, acaba a animação.
+    if (pipePosition <= 120){
+        pipe.style.animation = 'none'
+    }
 }, 10)
 
 document.addEventListener('keydown', jump)
