@@ -17,10 +17,16 @@ const jump = () => {
 const loop = setInterval(() => {
     // para acessar o deslocamento esquerdo do tubo
     const pipePosition = pipe.offsetLeft
+    // pega o estilo do bottom computado do mario e gera o valor string sem px
+    const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '')
+    // o + na frente converte para number, assim como "number()"
+
+    console.log(marioPosition)
 
     // quando a posição em relação a esquerda do pipe for 120 px, acaba a animação.
     if (pipePosition <= 120){
         pipe.style.animation = 'none'
+        pipe.style.left = `${pipePosition}px`
     }
 }, 10)
 
