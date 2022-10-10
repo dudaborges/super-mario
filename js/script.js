@@ -21,10 +21,9 @@ const loop = setInterval(() => {
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '')
     // o + na frente converte para number, assim como "number()"
 
-    console.log(marioPosition)
-
+ 
     // quando a posição em relação a esquerda do pipe for 120 px, acaba a animação.
-    if (pipePosition <= 120){
+    if (pipePosition <= 120 && marioPosition < 80){
         pipe.style.animation = 'none'
         pipe.style.left = `${pipePosition}px`
     }
