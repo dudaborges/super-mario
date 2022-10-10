@@ -28,7 +28,11 @@
     position: absolute;
     /* para o elemento ficar embaixo */
     bottom: 0;
-    animation: jump 500ms;
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+
 }
 
 /* animação com início e fim */
