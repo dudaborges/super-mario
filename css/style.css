@@ -15,11 +15,19 @@
 }
 
 .pipe{
+    /* para que nenhum elemento interfira no comportamento da outra */
     position: absolute;
     bottom: 0;
     width: 80px;
     /* linear para velocidade constante */
     animation: pipe-animation 4s infinite linear;
+}
+
+.mario{
+    width: 150px;
+    position: absolute;
+    /* para o elemento ficar embaixo */
+    bottom: 0;
 }
 
 @keyframes pipe-animation {
@@ -32,3 +40,5 @@
         right: 100%;
     }
 }
+
+
