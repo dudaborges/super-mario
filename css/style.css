@@ -43,7 +43,7 @@
     }
 }
 
- /* a animação começa no bottom 0, vai para bottom 150px e volta para o bottom 0 */
+ /* a animação começa no bottom 0, vai para bottom 180px e volta para o bottom 0 */
 
  /* animação com início, meio e fim */
  @keyframes jump {
@@ -53,8 +53,18 @@
         bottom: 0;
     }
 
+    /*3 momentos q ele fica no ar para ele demorar para cair de volta*/
+
+    40%{
+        bottom: 180px;
+    }
+
     50%{
-        bottom: 150px;
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 180px;
     }
 
     100%{
