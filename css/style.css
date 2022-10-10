@@ -59,6 +59,10 @@
 
     /*3 momentos q ele fica no ar para ele demorar para cair de volta*/
 
+    30%{
+        bottom: 180px;
+    }
+    
     40%{
         bottom: 180px;
     }
@@ -68,6 +72,10 @@
     }
 
     60%{
+        bottom: 180px;
+    }
+
+    70%{
         bottom: 180px;
     }
 
