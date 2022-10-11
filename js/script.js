@@ -23,9 +23,16 @@ const loop = setInterval(() => {
 
  
     // quando a posição em relação a esquerda do pipe for 120 px, acaba a animação.
-    if (pipePosition <= 120 && marioPosition < 80){
+    if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80){
         pipe.style.animation = 'none'
         pipe.style.left = `${pipePosition}px`
+
+        mario.style.animation = 'none'
+        mario.style.bottom = `${marioPosition}px`
+
+        mario.src = 'img/game-over.png'
+        mario.style.width = '75px'
+        mario.style.marginLeft = '50px'
     }
 }, 10)
 
