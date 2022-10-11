@@ -36,8 +36,10 @@
 
 }
 
-.cloud{
-    
+.clouds{
+    position: absolute;
+    width: 550px;
+    animation: clouds-animation 20s infinite linear;
 }
 
 /* animação com início e fim */
@@ -86,5 +88,15 @@
 
     100%{
         bottom: 0;
+    }
+ }
+
+
+ @keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
     }
  }
