@@ -33,6 +33,9 @@ const loop = setInterval(() => {
         mario.src = 'img/game-over.png'
         mario.style.width = '75px'
         mario.style.marginLeft = '50px'
+
+        // para parar de rodar o loop quando acabar o jogo
+        clearInterval(loop)
     }
 }, 10)
 
